@@ -1,0 +1,29 @@
+
+#include <iostream>
+using namespace std;
+
+class Base2 {
+    public:
+    void print(){
+        cout<<"Base Function"<<endl;
+    }
+};
+class Derived: public Base2{
+    public:
+    void print(){
+        cout<<"Derived Function"<<endl;
+        
+    }
+};
+
+int main(){
+    Derived derived1;
+    Base2 obj2;
+    
+   derived1.print();
+   obj2.print();
+   return 0;
+};
+
+
+    

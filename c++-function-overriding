@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+class DotNetTricks {
+public:
+ void print() { // overridden function
+ cout << "Welcome to DotNetTricks" << endl;
+ }
+};
+
+class ScholarHat : public DotNetTricks {
+public:
+ void print() { // overriding function
+ cout << "Welcome to ScholarHat" << endl;
+ DotNetTricks::print(); // call overridden function
+ }
+};
+
+int main() {
+ ScholarHat obj1;
+ obj1.print();
+
+ return 0;
+}
